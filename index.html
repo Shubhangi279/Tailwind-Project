@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tailwind Assignment</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-5">
+
+<!--Simple Heading-->
+<div>
+    <h1 class="mt-10 text-center text-4xl font-bold">
+        Welcome To Tailwind
+    </h1>
+
+    <div class="mt-6 text-center">
+
+<!--Colored Paragraph-->
+    <p class="mx-auto max-w-lg text-center text-lg text-gray-500">
+        Tailwind CSS is a utility-first CSS framework that helps us design
+        beautiful and responsive websites easily. It provides ready-made
+        classes for colors, spacing, fonts, layouts, and more.
+    </p>
+    </div>
+
+<!--Simple Button-->
+    <div class="mt-6 text-center">
+    <button class="m-1 rounded text-center bg-blue-500 px-4 py-2 text-white hover:bg-blue-700">
+        Learn More
+    </button>
+
+<!--Button Collection-->
+    <div class="mt-6 text-center">
+    <button class="m-1 rounded bg-pink-500 px-4 p-2 text-white hover:bg-pink-700">Primary</button>
+    <button class="m-1 rounded bg-yellow-500 px-4 p-2 text-white hover:bg-yellow-700">Success</button>
+    <button class="m-1 rounded bg-red-500 px-4 p-2 text-white hover:bg-red-700">Warning</button>
+    <button class="m-1 rounded bg-green-500 px-4 p-2 text-white hover:bg-green-700">Danger</button>
+    </div>
+    </div>
+
+<div class="mt-6 flex flex-wrap gap-6 justify-center">
+<!--Profile Card-->
+    <div class="mt-6">
+    <div class="w-80 rounded border border-gray-300 bg-white p-5 shadow">
+        <h2 class="text=xl font-bold">Shubhangi</h2>
+        <h3 class="text-blue-500">Web Developer</h3>
+        <p class="my-3">Passionate tech enthusiast exploring web development, cloud computing, and innovative technologies.</p>
+        <button class="rounded bg-blue-500 p-2 px-4 text-white hover:bg-blue-700">View Profile</button>
+    </div>
+    </div>
+
+<!--Image Card-->
+    <div class="mt-6">
+    <div class="w-80 rounded border border-gray-300 bg-white p-5 shadow">
+        <img src="https://cdn.vectorstock.com/i/500p/08/85/cute-black-haired-girl-avatar-vector-61860885.jpg" alt="Sample image">
+        <h2 class="mt-2 text-xl font-bold">My Imgae</h2>
+        <p class="my-2">This is an image card.</p>
+        <button class="rounded bg-pink-500 p-2 px-4 text-white hover:bg-pink-700">View more</button>
+    </div>
+    </div>
+</div>
+
+<!--Alert Messages-->
+<div class="mt-6 text-center ">
+    <h2 class="mb-4 text-center text-xl font-bold">
+    Alert Boxes
+    </h2>
+<div class="flex flex-wrap justify-center gap-4 text-center">
+    <p class="rounded bg-pink-200 p-3">Success</p>
+    <p class="rounded bg-green-200 p-3">Warning</p>
+    <p class="rounded bg-red-300 p-3">Error</p>
+    <p class="rounded bg-yellow-200 p-3">Information</p>
+</div>
+</div>
+
+<!--Badge Collection-->
+<div class="mt-6 text-center ">
+    <h2 class="mb-4 text-center text-xl font-bold">
+    Badge Collection
+    </h2>
+<div class="flex flex-wrap justify-center gap-4 text-center">
+    <span class="rounded bg-orange-300 p-2">HTML</span>
+    <span class="rounded bg-blue-300 p-2">CSS</span>
+    <span class="rounded bg-red-300 p-2">JavaScript</span>
+    <span class="rounded bg-green-300 p-2">React</span>
+    <span class="rounded bg-pink-300 p-2">Node.js</span>
+    <span class="rounded bg-yellow-300 p-2">Python</span>
+</div>
+
+<!--Pricing Card-->
+<div class="mt-6 text-center ">
+    <h2 class="mb-4 text-center text-xl font-bold">
+    Pricing Card
+    </h2>
+    <div class="flex justify-center">
+<div class="w-64  rounded bg-white p-5 text-center shadow">
+    <h2 class="text 2xl font-bold">Basic</h2>
+    <p class="my-3 text-3xl text-blue-500">₹999</p>
+    <p>1 Month</p>
+    <p>5 Projects</p>
+    <p>Support</p>
+    <button class="mt-4 bg-blue-500 p-2 text-white hover:bg-blue-700">Buy Now</button>
+</div>
+</div>
+</div>
+
+<!--Login Form-->
+<div class="mt-6 text-center ">
+    <h2 class="mb-4 text-center text-xl font-bold">
+    Login Form
+    </h2>
+<div class="flex flex-wrap justify-center gap-4 text-center">
+<div class="w-72 space-y-3 rounded bg-gray-100 p-5">
+    <label>Email</label>
+    <input type="email" class="w-full border p-2" placeholder="Email">
+
+    <label>Password</label>
+    <input type="password" class="w-full border p-2" placeholder="Password">
+
+    <label><input type="checkbox">Remember ME</label>
+
+    <button class="w-full bg-blue-500 p-2 text-white hover:bg-blue-700">Login</button>
+    <a href="#" class="text-blue-500">Forgot Password?</a>
+</div>
+</div>
+</div>
+
+    
+</div>
+</div>
+</body>
+</html>

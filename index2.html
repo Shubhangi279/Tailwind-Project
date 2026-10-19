@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Stars Playground</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+    <!--Horizontal Menu-->
+    <nav class="flex flex-wrap items-center justify-between bg-pink-200 p-4 text white">
+        <h1 class="text-2xl font-bold">🌈 Little Stars</h1>
+
+        <div class="flex flex-wrap gap-4">
+            <a herf="#home">Home</a>
+            <a herf="#about">About</a>
+            <a herf="#activities">Activities</a>
+            <a herf="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!--Responsive Navbar -->
+    <header id="home" class="flex items-center justify-between bg-white p-4 shadow">
+        <h2 class="text-xl font-bold text-purple-600">🧸 Kids Playground</h2>
+
+        <div class="hidden gap-4 md:flex">
+            <a href="#home">Home</a>
+            <a href="#activities">Activities</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <button class="text-2xl md:hidden" aria-label="Menu">☰</button>
+    </header>
+
+    <section class="bg-yellow-200 p-10 text-centre">
+        <h2 class="text-4xl font-bold text-pink-400">
+            Welcome to Little Stars!
+        </h2>
+        <p class="mt-3 text-lg">Play, Learn, Laugh and Grow! 🎈</p>
+        <button class="mt-5 rounded-full bg-pink-500 px-6 py-3 text-white">
+            Join the Fun
+        </button>
+    </section>
+
+    <div class="flex">
+
+        <!--Vertical Sidebar and 250px sidebar-->
+        <aside class="hidden w-[250px] shrink-0 flex-col gap-5 bg-purple-200 p-5 md:flex">
+            <h2 class="text-xl font-bold">Playground Menu</h2>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#activities">Activities</a>
+            <a href="#children">Children</a>
+            <a href="#settings">Settings</a>
+            <a href="#contact">Contact</a>
+        </aside>
+
+        <main class="min-w-0 flex-1 p-5">
+
+            <!--Space Between-->
+            <div class="mb-6 flex items-centre justify-between rounded-lg bg-white p-4 shadow">
+                <h2 class="text-xl font-bold">Playground Updates</h2>
+                <button class="rounded bg-purple-500 px-4 py-2 text-white">
+                    Login
+                </button>
+            </div>
+
+            <!--Dashboard Header + 4 Statistics-->
+            <section id="Dashboard">
+                <div class="mb-4 flex items-center justify-between">
+                    <h2 class="text-2xl font-bold">Dashboard</h2>
+                    <p class="font-bold text-pink-600">Admin 👩‍🏫</p>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <div class="min-w-32 flex-1 rounded-lg bg-pink-200 p-5">
+                        <p>Children</p>
+                        <h3 class="text-2xl font-bold">45</h3>
+                    </div>
+
+                    <div class="min-w-32 flex-1 rounded-lg bg-green-200 p-5">
+                        <p>Teachers</p>
+                        <h3 class="text-2xl font-bold">8</h3>
+                    </div>
+
+                    <div class="min-w-32 flex-1 rounded-lg bg-blue-200 p-5">
+                        <p>Activities</p>
+                        <h3 class="text-2xl font-bold">12</h3>
+                    </div>
+
+                    <div class="min-w-32 flex-1 rounded-lg bg-yellow-200 p-5">
+                        <p>Play Areas</p>
+                        <h3 class="text-2xl font-bold">6</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--Three Equal Boxes-->
+                <section class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Our Facilities</h2>
+
+                <div class="flex flex-wrap gap-4">
+                    <div class="min-w-40 flex-1 rounded-lg bg-pink-200 p-6 text-center">
+                        🛝<p class="mt-2 font-bold">Slides</p>
+                    </div>
+                    <div class="min-w-40 flex-1 rounded-lg bg-green-200 p-6 text-center">
+                        🎨<p class="mt-2 font-bold">Art Room</p>
+                    </div>
+                    <div class="min-w-40 flex-1 rounded-lg bg-blue-200 p-6 text-center">
+                        ⚽<p class="mt-2 font-bold">Playground</p>
+                    </div>
+                </div>
+                </section>
+            <!--50-50 Layout-->
+            <section class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Learning and Playing</h2>
+
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <div class="flex-1 rounded-lg bg-orange-200 p-8 text-centre">
+                        <h3 class="text-xl font-bold">📚 Learning</h3>
+                        <p class="mt-2">Stories, puzzles and drawing.</p>
+                    </div>
+
+                    <div class="flex-1 rounded-lg bg-green-200 p-8 text-centre">
+                        <h3 class="text-xl font-bold">🛝 Playing</h3>
+                        <p class="mt-2">Games, slides and fun.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--70-30 Layout-->
+            <section class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Playground News</h2>
+
+                <div class="flex flex-col gap-4 md:flex-row">
+                    <div class="rounded-lg bg-white p-6 shadow md:flex-[7]">
+                        <h3 class="text-xl font-bold">🎉 Annual Fun Day</h3>
+                        <p class="mt-2">
+                            Join us for games, music, painting and exciting
+                            activities for all our little stars.
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg bg-purple-200 p-6 md:flex-[3]">
+                        <h3 class="font-bold">Important Notice</h3>
+                        <p class="mt-2">Bring your water bottle every day!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Profile + Information-->
+            <section id="about" class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Meet Our Teacher</h2>
+                <div class="flex flex-col items-centre gap-5 rounded bg-white p-5 shadow sm:flex-row">
+                    <div class="flex h-24 w-24 shrink-0 items-center justify-centre rounded-full bg-pink-100 text-5xl">
+                        👩‍🏫
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold">Miss Shubhangi</h3>
+                        <p class="text-indigo-600">Nursery Teacher</p>
+                        <p class="mt-2">
+                            Helping little childrean learn, play and grow in a happy enviornment.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Card Row-->
+            <section id="activities" class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Fun Activities</h2>
+
+                <!--Flex wrap with 8 cards-->
+                <div class="flex flex-wrap gap-4">
+                    
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-centre shadow">
+                        <p class="text=-4xl">🎨</p>
+                        <h3 class="mt-2 font-bold">Painting</h3>
+                        <p class="mt-1 text-sm">Create colourful art.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">🧩</p>
+                        <h3 class="mt-2 font-bold">Football</h3>
+                        <p class="mt-1 text-sm">Play with friends.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">🎵</p>
+                        <h3 class="mt-2 font-bold">Music</h3>
+                        <p class="mt-1 text-sm">Sing and dance.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">📚</p>
+                        <h3 class="mt-2 font-bold">Story Time</h3>
+                        <p class="mt-1 text-sm">Enjoy fun stories.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">🧱</p>
+                        <h3 class="mt-2 font-bold">Building</h3>
+                        <p class="mt-1 text-sm">Build with blocks.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">🌱</p>
+                        <h3 class="mt-2 font-bold">Gardening</h3>
+                        <p class="mt-1 text-sm">Discover nature.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+
+                    <div class="flex min-w-36 flex-1 flex-col rounded-lg bg-white p-4 text-center shadow">
+                        <p class="text-4xl">🫧</p>
+                        <h3 class="mt-2 font-bold">Bubbles</h3>
+                        <p class="mt-1 text-sm">Enjoy outdoor fun.</p>
+                        <button class="mt-4 rounded bg-pink-500 p-2 text-white">Explore</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Q24: Complete Navbar -->
+             <section class="mt-8">
+                <h2 class="mb-4 text-xl font-bold">Complete Navbar Example</h2>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 rounded-lg bg-purple-500 p-4 text-white">
+                    <h3 class="text-xl font-bold">🧸 KidsZone</h3>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#activities">Activities</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <button class="rounded bg-yellow-300 px-4 py-2 text-purple-900">
+                        Login
+                    </button>
+                </div>
+            </section>
+    </main>
+    </div>
+
+    <!-- Q26: Center Login Box -->
+    <section class="flex min-h-screen items-center justify-center bg-pink-100 p-5">
+        <div class="w-full max-w-sm rounded-xl bg-white p-8 shadow-lg">
+            <h2 class="text-center text-2xl font-bold">Parent Login</h2>
+
+            <label class="mt-5 block">Email Address</label>
+            <input type="email" placeholder="Enter your email"
+                   class="mt-2 w-full rounded border p-3">
+
+            <label class="mt-4 block">Password</label>
+            <input type="password" placeholder="Enter your password"
+                   class="mt-2 w-full rounded border p-3">
+
+            <button class="mt-5 w-full rounded bg-pink-500 p-3 text-white">
+                Login
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-purple-800 p-6 text-center text-white">
+        <h2 class="text-xl font-bold">Little Stars Playground 🌈</h2>
+        <p class="mt-2">Where little smiles grow every day!</p>
+        <p class="mt-2">Contact: hello@littlestars.com</p>
+    </footer>
+
+</body>
+</html>
